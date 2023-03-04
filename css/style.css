@@ -1,0 +1,74 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.header{
+    height: 100px;
+    box-shadow: 0 0 10px;
+    
+}
+/* .navbar{
+    /* height: min-content; 
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+}
+.navbar-list{
+    list-style: none;
+    width: 500px;
+}
+.navbar-list, .logo{
+    width: 33.333%;
+}
+.navbar-item{
+    display: inline-block;
+} */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.navbar_cart {
+    margin-right: -100px;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.image-1{
+    width: 100%;
+    height: 600px;
+    background-image: url(/images/kiwistore.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-2{
+    width: 100%;
+    height: 580px;
+    background-image: url(/images/Welcome.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.footer{
+    height: 300px;
+    background-image: url(/images/footer-bg.jpg);  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
