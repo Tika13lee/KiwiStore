@@ -1,51 +1,56 @@
+
+*{
+    text-decoration: none;
+}
 .home{
     display: flex;
     flex-direction: column;
     align-content: space-between;
 }
+.text-black{
+    color: black;
+}
+/* Header */
 .header{
     height: 100px;
     box-shadow: 0 0 10px;
-    
 }
-/* .navbar{
-    /* height: min-content; 
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: nowrap;
+.logo{
+    font-family: Akaya Telivigala ;
+    font-size: 30px;
+    color: #86BA09;
+    padding-left: 100px;
 }
-.navbar-list{
-    list-style: none;
-    width: 500px;
-}
-.navbar-list, .logo{
-    width: 33.333%;
-}
-.navbar-item{
-    display: inline-block;
-} */
-
 .navbar {
     display: flex;
     justify-content: space-around;
     height: 100%;
+    width: 100%;
+    align-items: end;
 }
-
-.navbar_cart {
-    margin-right: -100px;
-}
-
-.navbar-list {
+.navbar-main{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    width: 400px;
+    justify-content: space-evenly;
+    width: 1200px;
+    align-items:center;
 }
-
-.navbar-list li {
+.navbar-main-right{
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+.navbar-list {
     list-style: none;
 }
+.navbar-main-left-text {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    font-family: Inter;
+    font-size: 20px;
+}
 
+/* Container */
 .image-1{
     width: 100%;
     height: 600px;
