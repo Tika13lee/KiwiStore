@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Header */
+.header {
+    height: 100px;
+    box-shadow: 0 0 10px;
+}
+
+.logo {
+    font-family: Akaya Telivigala;
+    font-size: 30px;
+    color: #86BA09;
+    padding-left: 100px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    align-items: end;
+}
+
+.navbar-main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    align-items: center;
+}
+
+.navbar-main-right {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.navbar-list {
+    list-style: none;
+}
+
+.navbar-main-left-text {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+    font-family: Inter;
+    font-size: 20px;
+}
+
+/* container */
