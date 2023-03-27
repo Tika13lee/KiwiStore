@@ -20,6 +20,7 @@
     font-size: 30px;
     color: #86BA09;
     padding-left: 100px;
+    padding-bottom: 25px;
 }
 
 .navbar {
@@ -35,6 +36,7 @@
     justify-content: space-evenly;
     width: 1200px;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .navbar-main-right {
