@@ -154,3 +154,72 @@
     top: -125px;
     right: -10px;
 }
+/* Introduce */
+.backgound-introduce{
+    width: 92%;
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/images/backgroundlogo.png);
+    background-position: 80px;
+    position: relative;
+    margin-top: 110px;
+}
+.logo-img{
+    position: absolute;
+    right: 70px;
+    top: 45px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+  
+}
+.text-introduce{
+    position: absolute;
+    color: white;
+    width: 630px;
+    font-family: inter;
+    font-size: 24px;
+    line-height: 35px;
+    margin-left: 150px;
+    text-align: justify;
+    margin-top: 40px;
+}
+/* Best sellers */
+.bestsellers{
+    margin-top: 110px;
+   
+}
+.powerofnature{
+    font-family: meddon;
+    color: #FA6C47 ;
+    font-size: 32px;
+    margin-left: 40%;
+}
+.bestsellersproducts{
+    font-family: nunito;
+    font-size: 36px;
+    margin-left: 40%;
+    margin-top: 7px;
+}
+.wesupport{
+    font-family: nunito sans;
+    color: #7A7A7A;
+    width: 600px;
+    text-align: center;
+    font-size: 22px;
+    margin-left: 32%;
+    margin-top: 5px;
+    
+}
+
+
+
+/* footer */
+/* .footer{
+
+    height: 300px;
+    background-image: url(/images/footer-bg.jpg);  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}  */
