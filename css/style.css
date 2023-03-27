@@ -51,29 +51,74 @@
 }
 
 /* Container */
-.image-1{
+.banner1-background{
     width: 100%;
     height: 600px;
-    background-image: url(/images/kiwistore.png);
+    background-image: url(/images/banner1-background.png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
-.image-2{
+.banner1-item{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 330px;
+    right: 0px;
+}
+/* .image-2{
     width: 100%;
     height: 580px;
     background-image: url(/images/Welcome.png);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+} */
+/* Time */
+.time{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left-time{
+    width: 560px;
+    height: 520px;
+}
+.right-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+}
+.open-img{
+    width: 80px;
+    height: 80px;
+}
+.close-img{
+    width: 80px;
+    height: 80px;
+}
+.open-time, .close-time{
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    align-items:center;
 }
 
-
-
-.footer{
+.text-time{
+    font-family: Inter;
+    font-size: 22px;
+}
+.first-text{
+    font-family: Inter;
+    font-size: 26px;
+}
+/* Footer */
+/* .footer{
     height: 300px;
     background-image: url(/images/footer-bg.jpg);  
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
