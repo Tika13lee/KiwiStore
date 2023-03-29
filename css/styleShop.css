@@ -19,8 +19,8 @@
     font-family: Akaya Telivigala;
     font-size: 30px;
     color: #86BA09;
-    padding-left: 100px;
-    padding-bottom: 25px;
+    /* padding-left: 100px;
+    padding-bottom: 25px; */
 }
 
 .navbar {
@@ -60,7 +60,7 @@
 /* container */
 
 /* main-img */
-.main-img{
+.main-img {
     height: 450px;
     background-image: url(/images/CuaHang/bg-CuaHang.jpg);
     background-size: cover;
@@ -89,7 +89,7 @@
 .newProduct-container {
     display: flex;
     justify-content: space-between;
-
+    margin: 40px 0;
 }
 
 .bg-item {
@@ -109,7 +109,7 @@
 }
 
 /* service */
-.service{
+.service {
     height: 150px;
     background-image: url(/images/CuaHang/bg-service.jpg);
     background-position: center;
@@ -119,11 +119,10 @@
     align-items: center;
 }
 
-.service-container{
+.service-container {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     margin: auto;
 }
 
@@ -138,17 +137,70 @@
     width: 130px;
     height: 130px;
     font-size: 13px;
-    /* color: white; */
+}
+
+/* list-product */
+.listProduct {
+    width: 80%;
+    margin: auto;
+}
+
+.brand {
+    height: 100px;
+    background-image: url(/images/CuaHang/bg-brand.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 /* footer */
-.footer{
+.footer {
+    margin-top: 70px;
     height: 300px;
-    background-image: url(/images/footer-bg.jpg);  
+    background-image: url(/images/CuaHang/bg-footer.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+table td:first-child {
+    width: 30px;
+}
+
+table tr {
+    height: 40px;
+}
+
+.menu {
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register {
+    margin-top: 50px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
