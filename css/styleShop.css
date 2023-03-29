@@ -56,7 +56,7 @@
 
 /* main-img */
 .main-img {
-    height: 450px;
+    height: 500px;
     background-image: url(/images/CuaHang/bg-CuaHang.jpg);
     background-size: cover;
     background-position: center;
@@ -66,19 +66,21 @@
 /* new product */
 .newProduct {
     width: 80%;
-    margin: auto;
+    margin: 100px auto;
 }
 
 .newProduct-top {
     border: 10px solid #e0e667;
     border-radius: 20px;
-    width: 400px;
+    width: 550px;
     height: 90px;
     margin: auto;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/images/CuaHang/bg-footer.jpg);
+    background-size: cover;
 }
 
 .newProduct-container {
@@ -112,6 +114,7 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .service-container {
@@ -126,10 +129,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #59d195;
+    background-color: #fff;
     border: none;
-    border-radius: 100px;
-    width: 130px;
+    border-radius: 50px;
+    width: 150px;
     height: 130px;
     font-size: 13px;
 }
