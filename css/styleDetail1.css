@@ -9,12 +9,18 @@
     background-color: #E6E8C9;
 }
 .background{
-    /* background-image: url(/images/Detail/background.jpg);
-    height: 536px;
-    background-repeat: no-repeat;
-    background-size:contain;
-    margin: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+.bg-img{
+    margin-top: 100px;
+   
+}
+.iconclose{
+    position: absolute;
+    right: 180px;
+    top: 130px;
+    
 }
