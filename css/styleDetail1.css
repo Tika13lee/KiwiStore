@@ -9,9 +9,12 @@
     background-color: #E6E8C9;
 }
 .background{
-    background-image: url(/images/Detail/background.jpg);
+    /* background-image: url(/images/Detail/background.jpg);
     height: 536px;
     background-repeat: no-repeat;
     background-size:contain;
-    margin: auto;
+    margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
