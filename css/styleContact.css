@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.wrapper{
+    font-family: Inter;
+    color: #201e1e;
+}
+
+.text-black{
+    color: #201e1e;
+}
+.text-white{
+    color: #fff;
+}
+/* heading */
+.heading{
+    height: 150px;
+    background-image: url(/images/LienHe/background-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+}
+.main-title{
+    font-size: 30px;
+}
+.link{
+    font-size: px;
+}
+/* MAIN */
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 90px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.big-img{
+    border-radius: 100px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(73, 72, 72, 0.1);
+}
+table td:first-child {
+    width: 30px;
+}
+
+table tr {
+    height: 50px;
+}
+.input{
+    height: 40px;
+    padding-left:7px;
+}
+
+.send{
+    border: none;
+    border-radius: 10px;
+    background-color: #86BA09;
+    height: 40px;
+    width: 80px;
+    margin-left: 240px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    margin-top: 30px;
+}
+.text-contact{
+    margin-left: 170px;
+}
+/* footer */
+.footer {
+    margin-top: 50px;
+    height: 300px;
+    background-image: url(/images/CuaHang/bg-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.menu {
+    margin-top: 40px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register {
+    margin-top: 40px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-footer{
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #eee;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.btnSub{
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #86BA09;
+    height: 40px;
+    width: 100px;
+}
+
+.icon-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
