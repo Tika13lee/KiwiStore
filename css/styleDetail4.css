@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.wrapper{
+    width: 100%;
+    height: 800px;
+    background-color: #E6E8C9;
+}
+.background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.bg-img{
+    margin-top: 100px;
+   
+}
+.iconclose{
+    position: absolute;
+    right: 180px;
+    top: 130px;
+    
+}
+.cam{
+    background-image: url(/images/Detail/cam.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 193px;
+    left: 240px;
+    width: 370px;
+    height: 450px;
+}
+.camcara{
+    position: absolute;
+    top: 190px;
+    left: 750px;
+    font-family: Meow Script;
+    font-size: 66px;
+    font-weight: 500;
+}
+.text{
+    position: absolute;
+    font-family: Lora;
+    font-size: 28px;
+    top: 290px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+}
+.quantity{
+    display: flex;
+    justify-content: space-between;
+}
+.but1{
+    width: 30px;
+    height: 40px;
+}
+.but2{
+    width: 100px;
+    height: 40px;
+}
+.btnSub{
+    border: none;
+    border-radius: 10px;
+    background-color: #418041;
+    height: 60px;
+    width: 300px;
+    color: white;
+    position: relative;
+    text-align:center;
+    font-family: lora;
+    
+}
+.shopping{
+    color: white;
+    position: absolute;
+    top: 275px;
+    left: 7px;
+}
