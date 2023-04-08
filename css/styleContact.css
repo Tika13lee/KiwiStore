@@ -85,11 +85,11 @@
 .contact-text{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .input {
     height: 40px;
-    width: 100%;
     padding-left: 7px;
 }
 
