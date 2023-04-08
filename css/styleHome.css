@@ -17,6 +17,7 @@
 /* Header */
 .header {
     height: 100px;
+    width: 100%;
     box-shadow: 0 0 10px;
 }
 
@@ -33,6 +34,7 @@
     font-family: Akaya Telivigala;
     font-size: 30px;
     color: #86BA09;
+    width: 20%;
 }
 
 .navbar-main-left{
@@ -85,9 +87,9 @@
     margin-top: 100px;
 }
 
-.left-time {
-    width: 560px;
-    height: 520px;
+.img-lefttime {
+    width: 100%;
+    height: 100%;
 }
 
 .right-time {
@@ -100,12 +102,12 @@
 }
 
 .open-img {
-    width: 80px;
+    width: 100%;
     height: 80px;
 }
 
 .close-img {
-    width: 80px;
+    width: 100%;
     height: 80px;
 }
 
@@ -178,22 +180,27 @@
 }
 
 .logo-img {
+    width: 30%;
     position: absolute;
-    right: 70px;
+    right: 65px;
     top: 45px;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 
 }
-
+.flex-intro{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
 .text-introduce {
     position: absolute;
     color: white;
-    width: 630px;
+    width: 50%;
     font-family: inter;
     font-size: 24px;
     line-height: 35px;
-    margin-left: 150px;
+    margin-left: 10%;
     text-align: justify;
     margin-top: 40px;
 }
@@ -382,3 +389,74 @@ table tr {
     justify-content: space-between;
     width: 20%;
 }
+
+/* RESPONSIVE */
+/* Mobile: width < 740px  */
+@media only screen and (max-width: 46.1875em) {
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em){
+    .navbar-main-right{
+        width: 10%;
+    }
+    .time{
+        flex-direction: column;
+    }
+    .flex-intro{
+        flex-direction: column;
+    }
+    .img-lefttime{
+        width: 70%;
+    }
+    .open-time, .close-time{
+        width: 70%;
+    }
+    .right-time-position_item1, .right-time-position_item3{
+        width: 70px;
+        height: 70px;
+    }
+    .right-time-position_item3{
+       margin-top: 120px;
+    }
+    .navbar-main-left{
+        display: none;
+    }
+    .text-introduce{
+        width: 50%;
+        margin-left: 15%;
+        margin-top: -3px;
+        font-size: 20px;
+    }
+    .logo-img{
+        margin-right: -45px;
+        margin-top: 50px;
+    }
+   .flex-intro{
+    flex-wrap: nowrap;
+   }
+   .bestsellers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+   .below-bestsellers{
+    flex-direction: column;
+    margin-top: 20px;
+   }
+   .wesupport{
+    margin-left: 10%;
+   }
+   .powerofnature, .bestsellersproducts{
+    margin-left: 25%;
+   }
+   .text-luu, .text-vietquat, .text-cam, .text-dau{
+    margin-left: 20%;
+   }
+   .luu, .vietquat, .cam, .dau{
+    margin-left: 25%;
+   }
+   .tohoaqua{
+    margin-left: 5%;
+   }
+   
+} 
