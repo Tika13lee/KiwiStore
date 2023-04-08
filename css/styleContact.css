@@ -1,22 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
 }
-.wrapper{
+
+.wrapper {
     font-family: Inter;
     color: #201e1e;
 }
 
-.text-black{
+.text-black {
     color: #201e1e;
 }
-.text-white{
+
+.text-white {
     color: #fff;
 }
+
 /* heading */
-.heading{
+.heading {
     height: 150px;
+    width: 100%;
     background-image: url(/images/LienHe/background-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,66 +30,100 @@
     justify-content: center;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 40px;
 }
-.main-title{
+
+.main-title {
     font-size: 30px;
 }
-.link{
+
+.link {
     font-size: px;
 }
+
 /* MAIN */
-.main{
+.main {
     display: flex;
     justify-content: space-evenly;
     width: 90%;
     margin-top: 90px;
     font-size: 20px;
-    margin-left: 50px;
+    margin: auto;
+    flex-wrap: wrap;
 }
-.big-img{
+
+.left{
+    width: 50%;
+    /* margin-top: 90px; */
+}
+
+.big-img {
     border-radius: 100px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgb(73, 72, 72, 0.1);
+    width: 100%;
 }
-table td:first-child {
+
+/* table td:first-child {
     width: 30px;
-}
+} */
 
-table tr {
+/* table tr {
     height: 50px;
-}
-.input{
-    height: 40px;
-    padding-left:7px;
+} */
+
+.right{
+    width: 40%;
+    margin: auto;
+    /* text-align: center; */
 }
 
-.send{
+.table-infor{
+    width: 100%;
+}
+
+.input {
+    height: 40px;
+    padding-left: 7px;
+}
+
+.area{
+    width: 100%;
+    /* margin: auto; */
+}
+
+.send {
     border: none;
     border-radius: 10px;
     background-color: #86BA09;
     height: 40px;
     width: 80px;
-    margin-left: 240px;
+    margin: auto;
 }
-.contact{
+
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
-    margin-top: 30px;
+    text-align: center;
+    /* margin-top: 30px; */
+    /* margin: auto; */
 }
-.text-contact{
+
+/* .text-contact {
     margin-left: 170px;
-}
+} */
+
 /* footer */
 .footer {
     margin-top: 50px;
-    height: 300px;
+    height: 100%;
+    width: 100%;
     background-image: url(/images/CuaHang/bg-footer.jpg);
     background-position: center;
     background-size: cover;
@@ -99,57 +137,90 @@ table tr {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    margin: auto;
+    /* flex-wrap: wrap; */
+
+}
+
+.logo-left{
+    width: 40%;
 }
 
 .menu {
     margin-top: 40px;
     height: 150px;
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* text-align: center; */
 }
 
 .register {
     margin-top: 40px;
     height: 170px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.email-footer{
+.email-container{
+    position: relative;
+}
+
+.email-footer {
     border: none;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px;
     background-color: #eee;
     height: 40px;
     width: 300px;
     padding-left: 20px;
 }
 
-.btnSub{
+.btnSub {
     border: none;
     border-radius: 0 10px 10px 0;
     background-color: #86BA09;
     height: 40px;
     width: 100px;
+    position: absolute;
+    right: 0;
 }
 
-.icon-footer{
+.icon-footer {
     display: flex;
     justify-content: space-between;
     width: 20%;
 }
+
 .logo {
     font-family: Akaya Telivigala;
     font-size: 30px;
     color: #86BA09;
 }
+
 table td:first-child {
     width: 30px;
 }
 
 table tr {
     height: 40px;
+}
+
+@media screen and (max-width:820px) and (max-width: 1024px){
+    .left, .right{
+        width: 100%;
+    }
+
+    /* .footer-container{
+        flex-direction: column;
+    } */
+
+    .logo-left, .menu, .register{
+        width: 100%;
+       
+    }
 }
