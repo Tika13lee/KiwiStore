@@ -37,7 +37,7 @@
     width: 20%;
 }
 
-.navbar-main-left{
+.navbar-main-left {
     width: 30%;
 }
 
@@ -47,7 +47,7 @@
     font-size: 20px;
 }
 
-.text-black{
+.text-black {
     color: #201e1e;
 }
 
@@ -55,7 +55,7 @@
     display: flex;
     justify-content: space-between;
     width: 5%;
-    
+
 }
 
 /* Container */
@@ -188,11 +188,13 @@
     border-top-left-radius: 30px;
 
 }
-.flex-intro{
+
+.flex-intro {
     display: flex;
     justify-content: space-between;
     width: 80%;
 }
+
 .text-introduce {
     position: absolute;
     color: white;
@@ -324,8 +326,10 @@
 
 /* footer */
 .footer {
-    margin-top: 70px;
-    height: 300px;
+    /* margin: 50px 0; */
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
     background-image: url(/images/CuaHang/bg-footer.jpg);
     background-position: center;
     background-size: cover;
@@ -339,7 +343,68 @@
 .footer-container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
+    margin: auto;
+}
+
+.logo-container {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.menu {
+    margin-top: 40px;
+    height: 150px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register {
+    margin-top: 40px;
+    height: 170px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-container {
+    position: relative;
+}
+
+.email-footer {
+    border: none;
+    border-radius: 10px;
+    background-color: #eee;
+    height: 40px;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.btnSub {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #86BA09;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.logo {
+    font-family: Akaya Telivigala;
+    font-size: 30px;
+    color: #86BA09;
 }
 
 table td:first-child {
@@ -350,113 +415,107 @@ table tr {
     height: 40px;
 }
 
-.menu {
-    margin-top: 40px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.register {
-    margin-top: 40px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.email{
-    border: none;
-    border-radius: 10px 0 0 10px;
-    background-color: #eee;
-    height: 40px;
-    width: 300px;
-    padding-left: 20px;
-}
-
-.btnSub{
-    border: none;
-    border-radius: 0 10px 10px 0;
-    background-color: #86BA09;
-    height: 40px;
-    width: 100px;
-}
-
-.icon-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-}
-
 /* RESPONSIVE */
 /* Mobile: width < 740px  */
-@media only screen and (max-width: 46.1875em) {
-}
+@media only screen and (max-width: 46.1875em) {}
+
 /* Tablet: width >= 740px and width < 1024px */
-@media only screen and (min-width: 46.25em) and (max-width:63.9375em){
-    .navbar-main-right{
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
+    .navbar-main-right {
         width: 10%;
     }
-    .time{
+
+    .time {
         flex-direction: column;
     }
-    .flex-intro{
+
+    .flex-intro {
         flex-direction: column;
     }
-    .img-lefttime{
+
+    .img-lefttime {
         width: 70%;
     }
-    .open-time, .close-time{
+
+    .open-time,
+    .close-time {
         width: 70%;
     }
-    .right-time-position_item1, .right-time-position_item3{
+
+    .right-time-position_item1,
+    .right-time-position_item3 {
         width: 70px;
         height: 70px;
     }
-    .right-time-position_item3{
-       margin-top: 120px;
+
+    .right-time-position_item3 {
+        margin-top: 120px;
     }
-    .navbar-main-left{
+
+    .navbar-main-left {
         display: none;
     }
-    .text-introduce{
+
+    .text-introduce {
         width: 50%;
         margin-left: 15%;
         margin-top: -3px;
         font-size: 20px;
     }
-    .logo-img{
+
+    .logo-img {
         margin-right: -45px;
         margin-top: 50px;
     }
-   .flex-intro{
-    flex-wrap: nowrap;
-   }
-   .bestsellers{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   }
-   .below-bestsellers{
-    flex-direction: column;
-    margin-top: 20px;
-   }
-   .wesupport{
-    margin-left: 10%;
-   }
-   .powerofnature, .bestsellersproducts{
-    margin-left: 25%;
-   }
-   .text-luu, .text-vietquat, .text-cam, .text-dau{
-    margin-left: 20%;
-   }
-   .luu, .vietquat, .cam, .dau{
-    margin-left: 25%;
-   }
-   .tohoaqua{
-    margin-left: 5%;
-   }
-   
-} 
+
+    .flex-intro {
+        flex-wrap: nowrap;
+    }
+
+    .bestsellers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .below-bestsellers {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .wesupport {
+        margin-left: 10%;
+    }
+
+    .powerofnature,
+    .bestsellersproducts {
+        margin-left: 25%;
+    }
+
+    .text-luu,
+    .text-vietquat,
+    .text-cam,
+    .text-dau {
+        margin-left: 20%;
+    }
+
+    .luu,
+    .vietquat,
+    .cam,
+    .dau {
+        margin-left: 25%;
+    }
+
+    .tohoaqua {
+        margin-left: 5%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .logo-container,
+    .register {
+        width: 100%;
+    }
+}
