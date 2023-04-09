@@ -472,17 +472,13 @@ table tr {
         flex-wrap: nowrap;
     }
 
-    .bestsellers {
+    /* .bestsellers {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    }
+    } */
 
-    .below-bestsellers {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
+   
     .wesupport {
         margin-left: 10%;
     }
@@ -491,31 +487,63 @@ table tr {
     .bestsellersproducts {
         margin-left: 25%;
     }
+.luu{
+    width: 70px;
+    height: 100px;
+    margin-top: 35px;
+  
+}
+.text-luu{
+    width: 200px;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.vietquat{
+    width: 70px;
+    height: 90px;
+    margin-left: 12px;
+}
+.text-vietquat{
+    width: 240px;
+    font-size: 11px;
+   
+}
+.tohoaqua{
+    width: 400px;
+    height: 300px;
+    margin-top: 260px;
 
-    .text-luu,
-    .text-vietquat,
-    .text-cam,
-    .text-dau {
-        margin-left: 20%;
-    }
+}
+.cam{
+    width: 80px;
+    height: 80px;
+   
+}
+.text-cam{
+    width: 250px;
+    font-size: 12px;
 
-    .luu,
-    .vietquat,
-    .cam,
-    .dau {
-        margin-left: 25%;
-    }
+}
+.dau{
+    width: 80px;
+    height: 90px;
+    margin-bottom: -200px;
+}
+.text-dau{
+    width: 250px;
+    font-size: 11px;
+    margin-top: 160px;
+}
 
-    .tohoaqua {
-        margin-left: 5%;
-    }
 
-    .footer-container {
-        flex-direction: column;
-    }
 
-    .logo-container,
-    .register {
-        width: 100%;
-    }
+.footer-container {
+    flex-direction: column;
+}
+
+.logo-container,
+.register {
+     width: 100%;
+}
 }
