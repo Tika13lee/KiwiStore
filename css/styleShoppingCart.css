@@ -226,4 +226,21 @@ table tr {
     .logo-container, .register{
         width: 100%;
     }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 150px 100px 120px 150px 120px 10px;
+        padding: 10px;
+        align-items: center;
+        margin-top: 70px;
+        margin-left: 2%;
+        row-gap: 10px;
+    }
+    .grid-item{
+        font-size: 12px;
+        font-weight: 500;
+        font-family: inter;
+    }
+    .butt, .butless, .butmore{
+        font-size: 12px;
+    }
 }
