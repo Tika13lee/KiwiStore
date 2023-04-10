@@ -244,3 +244,51 @@ table tr {
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 46.1875em) {
+    .below{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+    .img-fruit{
+        width: 40px;
+        height: 60px;
+    }
+    .left, .right{
+        width: 75%;
+        margin-top: 10px;
+    }
+    
+    .textsize{
+        font-size: 16px;
+    }
+    .input{
+        font-size: 16px;
+    }
+    
+    .send{
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 100px 100px 10px;
+        padding: 10px;
+        align-items: center;
+        margin-top: 70px;
+        margin-left: 10%;
+        row-gap: 10px;
+    }
+    .butless, .butmore{
+        width: 20px;
+        height: 20px;
+    }
+    .butt{
+        width: 40px;
+        height: 20px;
+    }
+}
