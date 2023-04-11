@@ -265,7 +265,12 @@ table tr {
 }
 
 @media screen and (max-width: 1280px) {
-
+    .navbar-main-left {
+        display: none;
+    }
+    .navbar-main-right {
+        width: 10%;
+    }
     .newProduct-top{
         font-size: small;
     }
