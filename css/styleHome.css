@@ -56,7 +56,8 @@
 
 /* Container */
 .banner1 {
-    width: 100%;
+    /* width: 1440px; */
+
     height: 600px;
     background-image: url(/images/TrangChu/kiwistore.png);
     background-position: bottom;
