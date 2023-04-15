@@ -15,16 +15,16 @@
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-</head>
-<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <div class="wrapper">
         <div class="header">
             <nav class="navbar">
                 <div class="logo">
                     <h1>KIWISTORE</h1>
                 </div>
-                <div class="navbar-main-left">
-                    <ul class="navbar-main-left-text">
+                <div class="navbar-main-right">
+                    <ul class="navbar-main-right-text">
                         <li>
                             <a href="/html/TrangChu.html" class="text-black"><i class="fa-solid fa-house"></i></i></a>
                         </li>
@@ -42,35 +42,169 @@
             </nav>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-2 font-weight-bold text-center flex-column" >
-                    <div> <img src="/images/TrangChu/user1.jpg" class="rounded-circle" alt="" width="40px" height="40px">
-                        <span>Thúy Kiều</span>
+            <div class="row mt-1">
+                <div class="col-2 font-weight-bold text-center flex-column bg-green " >
+                    <div class="mt-2"> <img src="/images/TrangChu/user1.jpg" class="rounded-circle" alt="" width="40px" height="40px">
+                        <span class="text-size">Thúy Kiều</span>
                     </div>
                    <div class="mt-4">
-                    <button type="button" class="btn btn-light "><i class="fa-solid fa-circle-info"></i> Thông tin</button>
+                    <button type="button" class="btn btn-light box "><i class="fa-solid fa-circle-info"></i> Thông tin</button>
                    </div>
                    <div class="mt-4">
-                    <button type="button" class="btn btn-light"><i class="fa-solid fa-users"></i> Khách hàng</button>
+                    <button type="button" class="btn btn-light box"><i class="fa-solid fa-users"></i> Khách hàng</button>
+                   </div>
+                   <div class="mt-4">
+                    <button type="button" class="btn btn-light box"><i class="fa-solid fa-calendar-minus"></i> Đơn hàng</button>
+                   </div>
+                   <div class="mt-4">
+                    <button type="button" class="btn btn-light box"><i class="fa-solid fa-user"></i> Người dùng</button>
+                   </div>
+                   <div class="mt-4">
+                    <button type="button" class="btn btn-light box"><i class="fa-solid fa-thumbs-up"></i> Đánh giá</button>
+                   </div>
+                   <div class="mt-4">
+                    <button type="button" class="btn btn-light box"><i class="fa-solid fa-gift"></i> Quà tặng</button>
+                   </div>
+                   <div class="mt-4 mb-5">
+                    <button type="button" class="btn btn-light box"><i class="fa-solid fa-right-from-bracket"></i> Đăng xuất</button>
                    </div>
                 </div>
-                <div class="col-3">
-                    <h3>DASHBOARD</h3>
-                    <P>Trang chủ/Dashboard</P>
+                <div class="col-3 flex-column bg-color">
+                    <div><h3 class="font-weight-bold">DASHBOARD</h3>
+                        <p>Trang chủ/Dashboard</p>
+                    </div>
+                    <div class="customer mt-3">
+                        <p class="text-size ml-3 mb-2">Khách hàng</p>
+                        <div class="down"> <i class="fa-sharp fa-solid fa-arrow-down text-danger"></i> <span class="text-danger">5,1%</span></div>
+                        <p class="text-size1 elip ml-5 text-center mt-5 font-weight-bold">50.000+</p>
+                    </div>
+                    <div class="sale mt-5">
+                        <p class="text-size ml-3 mb-2">Đơn hàng</p>
+                        <div class="down"> <i class="fa-solid fa-arrow-up text-success"></i><span class="text-success"> 13,4%</span></div>
+                        <p class="text-size1 elip ml-5 text-center mt-5 font-weight-bold">1.000+</p>
+                    </div>
                 </div>
-                <div class="col-7">aa</div>
+                <div class="col-7 bg-color">
+                    <div class="bar-chart">
+                        <canvas id="myChart" width="400px" height="200px"></canvas>
+                    </div>  
+                </div>
+                <div class="col-2 bg-green"></div>
+                <div class="col-7 bg-color">
+                    <table class="bg-white mt-5">
+                        <tr class="boder-bt">
+                            <td>User</td>
+                            <td>Country</td>
+                            <td>Activity</td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <div class="d-flex">
+                                <div><img class="first" src="/images/TrangChu/user2.jpg" alt=""></div>
+                                <div>
+                                  <p class="ml-3">Đặng Thị Như Quỳnh</p>
+                                  <p class="opa ml-3">dangnhuquynh.ks2003@gmail.com</p>
+                                </div>
+                                </div>
+                            </td>
+                            <td>Ninh Binh</td>
+                            <td>
+                                <div >
+                                    <p class="opa">last login</p>
+                                    <p>10 mins ago</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-3 bg-color">
+                    <div class="review mt-5">
+                        <p class="text-size1 ml-3">Đánh giá</p>
+                    </div>
+                </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-2 text-center " >
-                   <button type="button" class="btn btn-light"><i class="fa-solid fa-circle-info"></i> Thông tin</button>
-                </div>
-                <div class="col-3">
-                    <h3>DASHBOARD</h3>
-                    <P>Trang chủ/Dashboard</P>
-                </div>
-                <div class="col-7">aa</div>
-            </div> -->
+           
         </div>
     </div>
 </body>
 </html>
+<script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+  
+    Chart.defaults.global.defaultFontFamily = 'Lato';
+    Chart.defaults.global.defaultFontSize = 16;
+    Chart.defaults.global.defaultFontColor = '#666';
+
+    let massPopChart = new Chart(myChart, {
+      type:'bar',
+      data:{
+        labels:['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12',''],
+        datasets:[{
+          label:'%',
+          data:[
+            53, 77, 30, 65, 55, 80, 75, 48, 60, 78, 68,50,0
+          ],
+          backgroundColor:[ 'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)',
+          'rgba(164, 198, 69, 0.6)'
+          ],
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        }]
+      },
+      options:{
+        title:{
+          display:true,
+          text:'Doanh thu theo tháng',
+          fontSize:25
+        },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            fontColor:'#000'
+          }
+        },
+        layout:{
+          padding:{
+            left:50,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+        tooltips:{
+          enabled:true
+        }
+      }
+    });
+  </script>
+  <!-- <script>
+     // Chart
+  const dataBar = {
+    type: 'bar',
+    data: {
+      labels: ['Monday', 'Tuesday' , 'Wednesday' , 'Thursday' , 'Friday' , 'Saturday' , 'Sunday '],
+      datasets: [
+        {
+          label: 'Traffic',
+          data: [2112, 2343, 2545, 3423, 2365, 1985, 987],
+        },
+      ],
+    },
+  };
+  
+  new mdb.Chart(document.getElementById('bar-chart'), dataBar);
+  </script>
+  -->
