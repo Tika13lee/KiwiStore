@@ -55,9 +55,11 @@
 }
 
 /* Container */
-.banner1 {
-    /* width: 1440px; */
+/* .container{
+    width: 1440px;
+} */
 
+.banner1 {
     height: 600px;
     background-image: url(/images/TrangChu/kiwistore.png);
     background-position: bottom;
@@ -74,6 +76,9 @@
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Time */
@@ -166,8 +171,7 @@
 
 /* Introduce */
 .backgound-introduce {
-    width: 92%;
-    /* width: 100%; */
+    width: 92%;  
     height: 370px;
     background-size: cover;
     background-repeat: no-repeat;
