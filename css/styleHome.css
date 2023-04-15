@@ -55,18 +55,6 @@
 }
 
 /* Container */
-/* .container{
-    width: 1440px;
-} */
-
-.banner1 {
-    height: 600px;
-    background-image: url(/images/TrangChu/kiwistore.png);
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
 
 .welcome {
     margin-top: 100px;
