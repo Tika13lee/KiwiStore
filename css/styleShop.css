@@ -103,6 +103,11 @@
     margin-top: 40px;
 }
 
+.newProduct-container img:hover{
+    opacity: 0.5;
+    animation-duration: 10ms;
+}
+
 .bg-price {
     background-color: #d0c3c3;
     height: 110px;
