@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-4.0.0-dist/css/bootstrap.css">
+    <title>Document</title>
+    <script src="../bootstrap-4.0.0-dist/js/jquery-3.6.4.js"></script>
+    <script src="../bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script>
+        function ktMaBN() {
+            let ma = document.getElementById('txtMaBN').value;
+            let patten = /^[0-9]{3,}$/; //[A-Za-z0-9_]
+            if (patten.test(ma)) {
+                document.getElementById('erMaBN').innerHTML = "*";
+                return true;
+            } else {
+                document.getElementById('erMaBN').innerHTML = "Ma sai!!!";
+                return false;
+            }
+        }
+        function ktMK() {
+            let mk = document.getElementById('txtMK').value;
+            let patten = /^[0-9]{3,}$/; //[A-Za-z0-9_]
+            if (patten.test(mk)) {
+                document.getElementById('erMK').innerHTML = "*";
+                return true;
+            } else {
+                document.getElementById('erMK').innerHTML = "Mat khau sai cu phap!!!";
+                return false;
+            }
+        }
+        let stt=1
+            function ketqua(){
+                if (ktMaBN() && ktMK()){
+                    let ma = document.getElementById('txtMaBN').value;
+                    let mk = document.getElementById('txtMK').value;
+                    let nk = document.getElementById('dateNK').value;
+                    let loai = document.getElementById('loai').value;
+                    let chuyenKhoa = document.getElementById('chuyenKhoa').value;
+
+                    let row_moi = "<tr><td>" + stt +"</td><td>" + ma + "</td><td>" + mk + "</td><td>"+ nk +"</td><td>" + loai + "</td><td>" + chuyenKhoa + "</td></tr>";
+                    document.getElementById('tbl').innerHTML+=row_moi;
+                    
+                    stt++;
+                    
+                }
+            }
+    </script>
+
+</head>
+<body>
+    <div>
+        <div class="container">
+            <button data-toggle='modal' data-target='#frmdk'>Dat Lich</button>
+            <table class="table table-bordered m-3" id="tbl">
+                <tr>
+                    <th>STT</th>
+                    <th>Ma benh nhan</th>
+                    <th>Mat khau</th>
+                    <th>Ngay nhap</th>
+                    <th>Phu thu dich vu</th>
+                    <th>Chuyen khoa</th>
+                </tr>
+            </table>
+        </div>
+        <div class="modal" id="frmdk">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="">DAt LICH KHAM ONLINE</h1>
+                        <button data-dismiss="modal" class="close">&times;</button>
+                    </div>
+                    <div class="modal-boby">
+                        <form action="">
+    
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Ma Benh Nhan</label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="txtMaBN" onblur="ktMaBN()">
+                                    <span id="erMaBN">(*)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Mat khau</label>
+                                <div class="col-9">
+                                    <input type="text" class="form-control" id="txtMK" onblur="ktMK()" >
+                                    <span id="erMK">(*)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Ngay kham</label>
+                                <div class="col-9">
+                                    <input type="date" class="form-control" id="dateNK" >
+                                    <span id="erNgayK">(*)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Loai dich vu</label>
+                                <div class="col-9 " id="loai">
+                                    <input type="checkbox" name="LDV">Kham benh theo yeu cau
+                                    <input type="checkbox" name="LDV">Dieu tri ngoai tru
+                                    <input type="checkbox" name="LDV">Bac si theo yeu cau
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label for="" class="col-3 text-right">Chuyen khoa</label>
+                                <div class="col-9">
+                                   <select name="" id="chuyenKhoa">
+                                    <option value="NgoaiTongQuat">Ngoai tong quat</option>
+                                    <option value="Nhi">Nhi</option>
+                                    <option value="NoiTongQuat">NoiTongQuat</option>
+                                   </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-12 text-center">
+                                    <input type="button" class="btn btn-dark" value="Dat Lich" onclick="ketqua()">
+    
+                                </div>
+                            </div>
+                        </form>
+                        <div class="modal-footer">
+                            <button data-dismiss="modal" class="btnClose">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
