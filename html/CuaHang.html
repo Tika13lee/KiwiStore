@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inter&family=Meddon&family=Nunito+Sans:wght@200&family=Nunito:wght@800&family=Poppins&family=Roboto+Slab&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
-    <script src="../js/register.js"></script>
+    
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
    
@@ -42,7 +42,12 @@
                 </div>
                 <div class="navbar-main-right">
                     <a href="#" class="text-black"><i class="fa-solid fa-user"></i></a>
-                    <a href="/html/GioHang.html" class="text-black"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class="cart">
+                        <a href="/html/GioHang.html" class="text-black">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -53,33 +58,38 @@
                     <h2>SẢN PHẨM MỚI</h2>
                 </div>
                 <div class="newProduct-container">
-                    <div class="bg-item">
-                        <a href="../html/ChiTiet1.html"><img src="/images/CuaHang/dauTay.jpg" alt="" width="250px"></a>
+                    <div class="product">
+                        <img src="/images/CuaHang/dauTay.jpg" alt="" width="250px">
+                        <!-- <a href="../html/ChiTiet1.html"><img src="/images/CuaHang/dauTay.jpg" alt="" width="250px"></a> -->
                         <div class="bg-price">
                             <p>Dâu tây</p>
                             <span>400.000đ/kg</span>
                         </div>
+                        <a class="add-cart cart1" href="#">Add Cart</a>
                     </div>
-                    <div class="bg-item">
+                    <div class="product">
                         <img src="/images/CuaHang/cam.jpg" alt="" width="250px" height="250px">
                         <div class="bg-price">
                             <p>Cam ruột đỏ</p>
                             <span>500.000đ/kg</span>
                         </div>
+                        <a class="add-cart cart1" href="#">Add Cart</a>
                     </div>
-                    <div class="bg-item">
+                    <div class="product">
                         <img src="/images/CuaHang/nho.jpg" alt="" width="250px">
                         <div class="bg-price">
                             <p>Nho tím</p>
                             <span>350.000đ/kg</span>
                         </div>
+                        <a class="add-cart cart1" href="#">Add Cart</a>
                     </div>
-                    <div class="bg-item">
+                    <div class="product">
                         <img src="/images/CuaHang/kiwi.jpg" alt="" width="250px">
                         <div class="bg-price">
                             <p>Kiwi</p>
                             <span>340.000đ/kg</span>
                         </div>
+                        <a class="add-cart cart1" href="#">Add Cart</a>
                     </div>
                 </div>
             </div>
@@ -311,6 +321,8 @@
             </div>
         </div>
         
+        <script src="../js/detail.js"></script>
+        <script src="../js/register.js"></script>
     </div>
 </body>
 

@@ -1,22 +1,66 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
+    list-style: none;
 }
-.wrapper{
+
+.wrapper {
     font-family: Inter;
     color: #201e1e;
 }
-.text-black{
+
+.text-black {
     color: #201e1e;
 }
-.text-white{
+
+.text-white {
     color: #fff;
 }
 
+/* Header */
+.header {
+    height: 100px;
+    box-shadow: 0 0 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-family: Akaya Telivigala;
+    font-size: 30px;
+    color: #86BA09;
+}
+
+.navbar-main-left{
+    width: 30%;
+}
+
+.navbar-main-left-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.text-black{
+    color: #201e1e;
+}
+
+.navbar-main-right {
+    display: flex;
+    justify-content: space-between;
+    width: 5%;
+}
+
 /* heading */
-.heading{
+.heading {
     height: 150px;
     background-image: url(/images/DangKy-DangNhap/bg-header.jpg);
     background-size: cover;
@@ -27,7 +71,7 @@
     justify-content: center;
 }
 
-.title{
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,12 +80,24 @@
 
 /* Main */
 
-.main{
+.main {
     margin: 70px auto;
     width: 85%;
 }
 
-.grid-container{
+.products-container {
+    display: flex;
+    justify-content: center;
+}
+
+.product-header {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid lightgray;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px 50px;
     padding: 10px;
@@ -50,41 +106,48 @@
     margin-left: 10%;
     row-gap: 10px;
 }
-.grid-item{
+
+.grid-item {
     font-size: 24px;
     font-weight: 500;
     font-family: inter;
 }
-.divide{
+
+.divide {
     margin-top: 20px;
     width: 80%;
     margin-left: 10%;
     border-bottom: 2px solid rgb(158, 151, 151);
     box-shadow: 0 0 10px rgb(73, 72, 72, 0.4);
 }
-.img-fruit{
+
+.img-fruit {
     width: 130px;
     height: 130px;
 }
-.butless, .butmore{
+
+.butless,
+.butmore {
     width: 30px;
     height: 30px;
     font-size: 24px;
 }
-.butt{
+
+.butt {
     width: 50px;
     height: 30px;
     font-size: 24px;
 }
 
 /* below */
-.below{
+.below {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
     height: 400px;
 }
-.right{
+
+.right {
     width: 40%;
     background-color: #F3F7FF;
     border: 1px solid white;
@@ -95,7 +158,8 @@
     text-align: center;
     padding: 30px;
 }
-.left{
+
+.left {
     width: 30%;
     background-color: #F3F7FF;
     border: 1px solid white;
@@ -107,12 +171,12 @@
     padding: 30px;
 }
 
-.input{
+.input {
     height: 40px;
     font-size: 22px;
 }
 
-.send{
+.send {
     border: none;
     border-radius: 10px;
     background-color: #86BA09;
@@ -122,7 +186,8 @@
     font-size: 24px;
     align-self: center;
 }
-.textsize{
+
+.textsize {
     font-size: 27px;
 }
 
@@ -174,7 +239,7 @@
     align-items: center;
 }
 
-.email-container{
+.email-container {
     position: relative;
 }
 
@@ -216,20 +281,23 @@ table td:first-child {
 table tr {
     height: 40px;
 }
-.mobile-product{
+
+.mobile-product {
     display: none;
 }
 
 @media screen and (max-width: 1280px) {
 
-    .footer-container{
+    .footer-container {
         flex-direction: column;
     }
 
-    .logo-container, .register{
+    .logo-container,
+    .register {
         width: 100%;
     }
-    .grid-container{
+
+    .grid-container {
         display: grid;
         grid-template-columns: 150px 100px 120px 150px 120px 10px;
         padding: 10px;
@@ -238,82 +306,99 @@ table tr {
         margin-left: 2%;
         row-gap: 10px;
     }
-    .grid-item{
+
+    .grid-item {
         font-size: 12px;
         font-weight: 500;
         font-family: inter;
     }
-    .butt, .butless, .butmore{
+
+    .butt,
+    .butless,
+    .butmore {
         font-size: 12px;
     }
-    
 
-@media only screen and (max-width: 46.1875em) {
-    .below{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 50px;
+
+    @media only screen and (max-width: 46.1875em) {
+        .below {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+
+        .img-fruit {
+            width: 40px;
+            height: 60px;
+        }
+
+        .left,
+        .right {
+            width: 75%;
+            margin-top: 10px;
+        }
+
+        .textsize {
+            font-size: 16px;
+        }
+
+        .input {
+            font-size: 16px;
+        }
+
+        .send {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 10px;
+            padding: 10px;
+            align-items: center;
+            margin-top: 70px;
+            margin-left: 10%;
+            row-gap: 10px;
+        }
+
+        .butless,
+        .butmore {
+            width: 20px;
+            height: 20px;
+        }
+
+        .butt {
+            width: 40px;
+            height: 20px;
+        }
+
+        .grid-container {
+            display: none;
+        }
+
+        .mobile-product {
+            display: block;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+
+        .img-mobile {
+            width: 100px;
+            height: 100px;
+        }
+
+        .but-xoa {
+            width: 40px;
+            color: white;
+            background-color: #86BA09;
+            border: 1px solid #86BA09;
+        }
     }
-    .img-fruit{
-        width: 40px;
-        height: 60px;
-    }
-    .left, .right{
-        width: 75%;
-        margin-top: 10px;
-    }
-    
-    .textsize{
-        font-size: 16px;
-    }
-    .input{
-        font-size: 16px;
-    }
-    
-    .send{
-        width: 100px;
-        height: 30px;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-    .grid-container{
-        display: grid;
-        grid-template-columns: 100px 100px 10px;
-        padding: 10px;
-        align-items: center;
-        margin-top: 70px;
-        margin-left: 10%;
-        row-gap: 10px;
-    }
-    .butless, .butmore{
-        width: 20px;
-        height: 20px;
-    }
-    .butt{
-        width: 40px;
-        height: 20px;
-    }
-    .grid-container{
-        display: none;
-    }
-    .mobile-product{
-        display: block;
-    }
-    .product{
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 20px;
-    }
-    .img-mobile{
-        width: 100px;
-        height: 100px;
-    }
-    .but-xoa{
-        width: 40px;
-        color: white;
-        background-color:#86BA09;
-        border: 1px solid #86BA09;
-    }
-}
 }
