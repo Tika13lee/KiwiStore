@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styleShoppingCart.css">
+    <link rel="stylesheet" href="/css/styleCart.css">
     <link
-    href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inter&family=Meddon&family=Nunito+Sans:wght@200&family=Nunito:wght@800&family=Poppins&family=Roboto+Slab&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inter&family=Meddon&family=Nunito+Sans:wght@200&family=Nunito:wght@800&family=Poppins&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/icon/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Giỏ hàng & Thanh toán</title>
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="wrapper">
         <!-- <div class="heading">
@@ -23,7 +28,7 @@
                 </div>
             </div>
         </div> -->
-        
+
         <div class="header">
             <nav class="navbar">
                 <div class="logo">
@@ -53,95 +58,24 @@
                 </div>
             </nav>
         </div>
-        
+
         <div class="main">
-            <!-- <div class="grid-container">
-                <div class="grid-item">Sản phẩm</div>
-                <div class="grid-item"></div>
-                <div class="grid-item">Giá <br>(nghìn đồng/kg)</br></div>
-                <div class="grid-item">Số lượng <br>(kg)</div>
-                <div class="grid-item">Tổng <br>(nghìn đồng)</div>
-                <div class="grid-item"></div>
-                <div class="grid-item"><img class="img-fruit" src="/images/CuaHang/cherry.jpg" alt=""></div>
-                <div class="grid-item">Cherry</div>
-                <div class="grid-item">400.000</div>
-                <div class="grid-item">
-                    <button class="butless">-</button>
-                    <button class="butt">3</button>
-                    <button class="butmore">+</button>
-                </div>
-                <div class="grid-item">1.200.000</div>
-                <div class="grid-item"><i class="fa-regular fa-circle-xmark"></i></div>
-                <div class="grid-item"><img class="img-fruit" src="/images/CuaHang/vietQuat.jpg" alt=""></div>
-                <div class="grid-item">Việt quất</div>
-                <div class="grid-item">150.000</div>
-                <div class="grid-item">
-                    <button class="butless">-</button>
-                    <button class="butt">2</button>
-                    <button class="butmore">+</button>
-                </div>
-                <div class="grid-item">300.000</div>
-                <div class="grid-item"><i class="fa-regular fa-circle-xmark"></i></div>
-                <div class="grid-item"><img class="img-fruit" src="/images/CuaHang/taoXanh.jpg" alt=""></div>
-                <div class="grid-item">Táo xanh</div>
-                <div class="grid-item">370.000</div>
-                <div class="grid-item">
-                    <button class="butless">-</button>
-                    <button class="butt">5</button>
-                    <button class="butmore">+</button>
-                </div>
-                <div class="grid-item">1.850.000</div>
-                <div class="grid-item"><i class="fa-regular fa-circle-xmark"></i></div>
-            </div> -->
-            <!-- <div class="mobile-product">
-                <div class="product">
-                    <div><img class="img-mobile" src="/images/CuaHang/cherry.jpg" alt=""></div>
-                    <div>
-                        <p>Sản phẩm: Cherry</p>
-                        <p>Giá(nghìn đồng/kg): 400.000</p>
-                        <p>Số lượng(kg):  <button class="butless">-</button>
-                            <button class="butt">3</button>
-                            <button class="butmore">+</button></p>
-                        <p>Tổng(nghìn đồng): 1.200.000</p>
-                        <button class="but-xoa">Xóa</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <div><img class="img-mobile" src="/images/CuaHang/taoXanh.jpg" alt=""></div>
-                    <div>
-                        <p>Sản phẩm: Việt quất</p>
-                        <p>Giá(nghìn đồng/kg): 150.000</p>
-                        <p>Số lượng(kg):  <button class="butless">-</button>
-                            <button class="butt">2</button>
-                            <button class="butmore">+</button></p>
-                        <p>Tổng(nghìn đồng): 300.000</p>
-                        <button class="but-xoa">Xóa</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <div><img class="img-mobile" src="/images/CuaHang/vietQuat.jpg" alt=""></div>
-                    <div>
-                        <p>Sản phẩm: Táo xanh</p>
-                        <p>Giá(nghìn đồng/kg): 370.000</p>
-                        <p>Số lượng(kg):  <button class="butless">-</button>
-                            <button class="butt">5</button>
-                            <button class="butmore">+</button></p>
-                        <p>Tổng(nghìn đồng): 1.850.000</p>
-                        <button class="but-xoa">Xóa</button>
-                    </div>
-                </div>
-            </div> -->
-            
             <div class="products-container">
                 <div class="product-header">
-                    <h5 class="product-title">TÊN SẢN PHẨM</h5>
-                    <h5 class="price">GIÁ</h5>
-                    <h5 class="quantity">SỐ LƯỢNG</h5>
-                    <h5 class="total">TỔNG</h5>
+                    <table class="table">
+                        <tr>
+                            <th>STT</th>
+                            <th class="name">SẢN PHẨM</th>
+                            <th class="origin">XUẤT XỨ</th>
+                            <th class="price">GIÁ</th>
+                            <th class="quantity">SỐ LƯỢNG</th>
+                            <th class="total">TỔNG</th>
+                        </tr>
+                    </table>
                 </div>
             </div>
 
-            <!-- <div class="below">
+            <div class="below">
                 <div class="left">
                     <h2 class="infor">THÔNG TIN NHẬN HÀNG</h2>
                     <input type="text" class="input" placeholder="Họ và tên">
@@ -154,7 +88,7 @@
                     <p class="textsize">Tổng thanh toán: 3.300.000đ</p>
                     <button class="send">Đặt hàng</button> 
                 </div>
-            </div> -->
+            </div>
         </div>
         <div class="footer">
             <div class="footer-container">
@@ -204,9 +138,7 @@
         </div>
     </div>
 
-    <script src="../js/detail.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
+
 </html>
-
-
-
