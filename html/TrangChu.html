@@ -38,8 +38,58 @@
                     </ul>
                 </div>
                 <div class="navbar-main-right">
-                    <a href="#" class="text-black"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" class="text-black"><i class="fa-solid fa-user" data-target="#LogIn" data-toggle="modal"></i></a>
                     <a href="/html/GioHang.html" class="text-black"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="modal" id="LogIn">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="col-12 text-center">
+                                    <h3 class="logo">KIWISTORE</h3>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <form action="">
+                                    <div class="row form-group">
+                                        <div class="col-1"></div>
+                                        <div class="col-10 text-left">
+                                            <input type="text" name="txtUser" id="txtUser" placeholder="Tên tài khoản" class="form-control">
+                                            <span class=""></span>
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-1"></div>
+                                        <div class="col-10 text-left">
+                                            <input type="password" name="pwd" id="pwd" placeholder="Mật khẩu" class="form-control">
+                                            <span class=""></span>
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-1"></div>
+                                        <div class="col-5 text-left">
+                                            <input type="checkbox" name="cboMK" id="cboMK">
+                                            <label for="">Nhớ mật khẩu</label>
+                                        </div>
+                                        <div class="col-5 text-right">
+                                            <a href="#" class="text-black">Quên mật khẩu ?</a>
+                                        </div>
+                                        <div class="col-1"></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col-12 text-center">
+                                            <input type="button" name="login" id="login" value="ĐĂNG NHẬP" class="btn-outline-success btnLogIn">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button data-dismiss="modal" class="btn btn-danger  btn-sm">Đóng</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="respon-navbar">
