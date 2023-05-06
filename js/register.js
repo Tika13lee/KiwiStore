@@ -1,6 +1,6 @@
 function ktFullname(){
     let name = document.getElementById('fullname').value;
-    let patten = /^[a-zA-Z]+$/;
+    let patten = /^[a-zA-Z ]+$/;
     if(patten.test(name)){
         document.getElementById('errfullname').innerHTML = "";
         return true; 
@@ -44,19 +44,31 @@ function ktMK(){
 }
 function ketqua(){
     if(ktFullname() && ktphone() && ktusername() && ktMK()){
-        let name = document.getElementById('fullname').value;
-        let sdt = document.getElementById('phone-number').value;
-        let uname = document.getElementById('username').value;
-        let mk = document.getElementById('psw').value;
+        event.preventDefault();
+        var name = document.getElementById('fullname').value;
+        var sdt = document.getElementById('phone-number').value;
+        var uname = document.getElementById('username').value;
+        var mk = document.getElementById('psw').value;
 
-        let members = localStorage.getItem('members') ? JSON.parse(localStorage.getItem('members')) : [];
-
-        members.push({
-            name: name,
-            sdt: sdt,
-            uname: uname,
-            mk: mk,
-        });
-        localStorage.setItem('members',JSON.stringify(members));
+        var user = {
+            name : name,
+            sdt : sdt,
+            uname : uname,
+            mk : mk
+        }
+        var key = localStorage.getItem(uname);
+        var data = JSON.parse(key);
+        if(data == null){
+            if(name =="" && sdt == "" && uname == "" && mk ==""){
+                alert("Nhập đủ các trường");
+            } else {
+                   var json = JSON.stringify(user);
+                   localStorage.setItem(uname, json);
+                   alert("Đăng ký thành công")
+                   window.location.href=('DangNhap.html')
+            }
+        } else if (uname == data.uname){
+            alert("Tên đăng nhập đã tồn tại")
+        }
     }
 }
