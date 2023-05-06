@@ -437,6 +437,7 @@ table tr {
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.2s;
+    z-index: 100;
 }
 .nav_ipad-link{
     text-decoration: none;
@@ -586,6 +587,7 @@ table tr {
     width: 400px;
     height: 300px;
     margin-top: 260px;
+
 
 }
 .cam{
