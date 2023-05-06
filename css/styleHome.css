@@ -60,7 +60,9 @@
 }
 
 /* Wrapper */
-
+.banner-height{
+    height: 650px;
+}
 .welcome {
     margin-top: 100px;
     width: 100%;
@@ -486,7 +488,84 @@ table tr {
     .navbar-main-left {
         display: none;
     }
+    .banner-height{
+        height: 300px;
+    }
+    .welcome{
+        height: 300px;
+    }
+    .time{
+        flex-direction: column;
+    }
+    .img-lefttime{
+        width: 90%;
+        height: 300px;
+    }
+    .right-time-position_item1, .right-time-position_item2, .right-time-position_item3{
+        display: none;
+    }
+    .first-text{
+        font-size: 24px;
+    }
+    .flex-intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-introduce{
+        font-size: 16px;
+        line-height: 1.2;
+        padding-left: 10%;
+        width: 85%;
+        padding-top: 120px;
+    }
+    .logo-img {
+        width: 40%;
+        position: absolute;
+        right: 85px;
+        top: 20px;
+        border: 15px;
+    }
+    .powerofnature {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-left: 30%;
+    }
+    
+    .bestsellersproducts {
+        font-size: 24px;
+        margin-left: 30%;
+        margin-top: 7px;
+    }
+    .wesupport {  
+        width: 400px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 15%;
+        margin-top: 5px;
+    }
+    .below-bestsellers {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .tohoaqua{
+        display: none;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
 
+    .logo-container, .register{
+        width: 100%;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 }
 
 /* Tablet: width >= 740px and width < 1024px */
@@ -501,8 +580,7 @@ table tr {
     }
     .menu-btn{
         font-size: 20px;
-        display: block;
-    
+        display: block; 
     }
     .logo{
         margin-left: 300px;
@@ -510,34 +588,27 @@ table tr {
     .time {
         flex-direction: column;
     }
-
     .flex-intro {
         flex-direction: column;
     }
-
     .img-lefttime {
         width: 70%;
     }
-
     .open-time,
     .close-time {
         width: 70%;
     }
-
     .right-time-position_item1,
     .right-time-position_item3 {
         width: 70px;
         height: 70px;
     }
-
     .right-time-position_item3 {
         margin-top: 120px;
     }
-
     .navbar-main-left {
         display: none;
     }
-
     .text-introduce {
         width: 50%;
         margin-left: 15%;
@@ -561,68 +632,66 @@ table tr {
     .bestsellersproducts {
         margin-left: 25%;
     }
-.luu{
-    width: 70px;
-    height: 100px;
-    margin-top: 35px;
-  
-}
-.text-luu{
-    width: 200px;
-    font-size: 12px;
-    margin-left: 10px;
-    margin-top: 30px;
-}
-.vietquat{
-    width: 70px;
-    height: 90px;
-    margin-left: 12px;
-}
-.text-vietquat{
-    width: 240px;
-    font-size: 11px;
-   
-}
-.tohoaqua{
-    width: 400px;
-    height: 300px;
-    margin-top: 260px;
-
-
-}
-.cam{
-    width: 80px;
-    height: 80px;
-   
-}
-.text-cam{
-    width: 250px;
-    font-size: 12px;
-
-}
-.dau{
-    width: 80px;
-    height: 90px;
-    margin-bottom: -200px;
-}
-.text-dau{
-    width: 250px;
-    font-size: 11px;
-    margin-top: 160px;
-}
-.footer-container {
-    flex-direction: column;
-}
-.logo-container,
-.register {
-     width: 100%;
-}
-}
-@keyframes fadeIn{
-    from{
-        opacity: 0;
+    .luu{
+        width: 70px;
+        height: 100px;
+        margin-top: 35px;
+    
     }
-    to{
-        opacity: 1;
+    .text-luu{
+        width: 200px;
+        font-size: 12px;
+        margin-left: 10px;
+        margin-top: 30px;
     }
-}
+    .vietquat{
+        width: 70px;
+        height: 90px;
+        margin-left: 12px;
+    }
+    .text-vietquat{
+        width: 240px;
+        font-size: 11px;
+    
+    }
+    .tohoaqua{
+        width: 400px;
+        height: 300px;
+        margin-top: 260px;
+    }
+    .cam{
+        width: 80px;
+        height: 80px;
+    
+    }
+    .text-cam{
+        width: 250px;
+        font-size: 12px;
+
+    }
+    .dau{
+        width: 80px;
+        height: 90px;
+        margin-bottom: -200px;
+    }
+    .text-dau{
+        width: 250px;
+        font-size: 11px;
+        margin-top: 160px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .logo-container,
+    .register {
+        width: 100%;
+    }
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
