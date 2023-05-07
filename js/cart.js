@@ -159,12 +159,14 @@ function totalCost(product) {
 function displayCart(){
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
+    let cartCost = localStorage.getItem("totalCost");
     let productContainer = document.querySelector('.products-container');
 
     if(cartItems && productContainer){
         let cartItems = localStorage.getItem("productsInCart");
         cartItems = JSON.parse(cartItems);
         let productContainer = document.querySelector('.table');
+        let thanhTien = document.querySelector('.thanhTien');
 
         if(cartItems && productContainer){
             // productContainer.innerHTML = '';
@@ -198,6 +200,8 @@ function displayCart(){
                 `
                 stt++;
             });
+
+            thanhTien.innerHTML += `<p class="sum">${cartCost}</p>`;  
         }
     }
 }
