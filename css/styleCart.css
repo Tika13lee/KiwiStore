@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
 }
 
@@ -21,6 +21,7 @@
 /* Header */
 .header {
     height: 100px;
+    width: 100%;
     box-shadow: 0 0 10px;
 }
 
@@ -30,7 +31,7 @@
     align-items: center;
     height: 100%;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .logo {
@@ -83,7 +84,6 @@
 .total,
 .price {
     text-align: right;
-    /* font-size: 20px; */
 }
 
 /* below */
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    height: 400px;
+   
 }
 
 .right {
@@ -103,18 +103,6 @@
     justify-content: space-around;
     border-radius: 20px;
     text-align: center;
-    padding: 30px;
-}
-
-.left {
-    width: 35%;
-    background-color: #F3F7FF;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    border-radius: 20px;
     padding: 30px;
 }
 
@@ -183,7 +171,7 @@
 
 .register {
     margin-top: 40px;
-    height: 170px;
+    /* height: 170px; */
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -191,7 +179,7 @@
     align-items: center;
 }
 
-.email-container {
+.email-container{
     position: relative;
 }
 
@@ -220,22 +208,12 @@
     width: 20%;
 }
 
-.logo {
-    font-family: Akaya Telivigala;
-    font-size: 30px;
-    color: #86BA09;
-}
-
 table td:first-child {
     width: 30px;
 }
 
 table tr {
     height: 40px;
-}
-
-.mobile-product {
-    display: none;
 }
 
 @media screen and (max-width: 1280px) {
