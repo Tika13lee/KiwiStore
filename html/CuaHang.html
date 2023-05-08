@@ -14,14 +14,43 @@
         href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Inter&family=Meddon&family=Nunito+Sans:wght@200&family=Nunito:wght@800&family=Poppins&family=Roboto+Slab&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
-    
+
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-   
+
 </head>
 
 <body>
     <div class="shop">
+        <!-- <div class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>KIWISTORE</h1>
+                </div>
+                <div class="navbar-main-left">
+                    <ul class="navbar-main-left-text">
+                        <li>
+                            <a style="text-decoration: none;" href="/html/TrangChu.html" class="text-black">TRANG
+                                CHỦ</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;" href="/html/CuaHang.html" class="text-black">CỬA HÀNG</a>
+                        </li>
+                        <li>
+                            <a style="text-decoration: none;" href="/html/LienHe.html" class="text-black">LIÊN HỆ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-main-right">
+                    <a href="../html/DangNhap.html" class="text-black"><i class="fa-solid fa-user"></i></a>
+                    <a href="/html/GioHang.html" class="text-black">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0</span>
+                    </a>
+                </div>
+            </nav>
+        </div> -->
+        
         <div class="header">
             <nav class="navbar">
                 <div class="logo">
@@ -51,6 +80,7 @@
                 </div>
             </nav>
         </div>
+
         <div class="main">
             <div class="main-img"></div>
             <div class="newProduct">
@@ -216,10 +246,10 @@
                     </div>
                     <div class="menu">
                         <h2>MENU</h2>
-                        <a href="/html/TrangChu.html" class="text-black">Trang chủ</a>
-                        <a href="/html/CuaHang.html" class="text-black">Cửa hàng</a>
-                        <a href="/html/DangNhap.html" class="text-black">Đăng nhập</a>
-                        <a href="/html/LienHe.html" class="text-black">Liên hệ</a>
+                        <a style="text-decoration: none;" href="/html/TrangChu.html" class="text-black">Trang chủ</a>
+                        <a style="text-decoration: none;" href="/html/CuaHang.html" class="text-black">Cửa hàng</a>
+                        <a style="text-decoration: none;" href="/html/DangNhap.html" class="text-black">Đăng nhập</a>
+                        <a style="text-decoration: none;" href="/html/LienHe.html" class="text-black">Liên hệ</a>
                     </div>
                 </div>
                 <div class="register">
@@ -227,10 +257,11 @@
                     <p>Đăng ký để nhận thông tin mới nhất từ chúng tôi</p>
                     <div class="email-container">
                         <input class="email-footer" type="email" placeholder="Email">
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Đăng ký</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Đăng
+                            ký</button>
                         <div class="modal fade" id="myModal" role="dialog">
                             <div class="modal-dialog ">
-                
+
                                 <!-- Modal content-->
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -248,7 +279,8 @@
                                                     <label for="">Họ và tên:</label>
                                                 </div>
                                                 <div class="col-8">
-                                                    <input type="text" id="fullname" class="form-control" placeholder="Nhập vào họ tên " onblur="ktFullname()">
+                                                    <input type="text" id="fullname" class="form-control"
+                                                        placeholder="Nhập vào họ tên " onblur="ktFullname()">
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="text-danger">*</span>
@@ -263,11 +295,12 @@
                                                     <label for="">Điện thoại:</label>
                                                 </div>
                                                 <div class="col-8">
-                                                    <input type="text"  id="phone-number" class="form-control" placeholder="Nhập vào số điện thoại" onblur="ktphone()">
+                                                    <input type="text" id="phone-number" class="form-control"
+                                                        placeholder="Nhập vào số điện thoại" onblur="ktphone()">
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="text-danger">*</span>
-                                                </div> 
+                                                </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-3"></div>
@@ -278,7 +311,8 @@
                                                     <label for="">Tên đăng nhập:</label>
                                                 </div>
                                                 <div class="col-8">
-                                                    <input type="text" id="username" class="form-control" placeholder="Nhập vào tên đăng nhập" onblur="ktusername()">
+                                                    <input type="text" id="username" class="form-control"
+                                                        placeholder="Nhập vào tên đăng nhập" onblur="ktusername()">
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="text-danger">*</span>
@@ -293,7 +327,8 @@
                                                     <label for="">Mật khẩu:</label>
                                                 </div>
                                                 <div class="col-8">
-                                                    <input type="password" id="psw" class="form-control" placeholder="Nhập vào mật khẩu" onblur="ktMK()">
+                                                    <input type="password" id="psw" class="form-control"
+                                                        placeholder="Nhập vào mật khẩu" onblur="ktMK()">
                                                 </div>
                                                 <div class="col-1">
                                                     <span class="text-danger">*</span>
@@ -305,29 +340,32 @@
                                             </div>
                                             <div class="row form-group">
                                                 <div class="col-12 text-center button_submit">
-                                                    <input type="button" class="btn-success mt-2" style="width: 100px; height: 35px;" value="Đăng ký" onclick="ketqua()">
+                                                    <input type="button" class="btn-success mt-2"
+                                                        style="width: 100px; height: 35px;" value="Đăng ký"
+                                                        onclick="ketqua()">
                                                 </div>
                                             </div>
-                                        </form>   
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Hủy</button>
+                                        <button type="button" class="btn btn-danger btn-sm"
+                                            data-dismiss="modal">Hủy</button>
                                     </div>
                                 </div>
-                
+
                             </div>
                         </div>
                     </div>
                     <p>Kết nối với Kiwi Store</p>
                     <div class="icon-footer">
-                        <a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
+                        <a style="font-size: 24px;" href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a>
+                        <a style="font-size: 24px;" href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a>
+                        <a style="font-size: 24px;" href="#" class="text-black"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <script src="../js/cart.js"></script>
         <script src="../js/register.js"></script>
     </div>

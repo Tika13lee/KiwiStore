@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
 }
 
@@ -10,8 +10,12 @@
     color: #201e1e;
 }
 
+.text-black {
+    color: black;
+}
+
 /* Header */
-.header {
+/* .header {
     height: 100px;
     box-shadow: 0 0 10px;
 }
@@ -49,6 +53,49 @@
     display: flex;
     justify-content: space-between;
     width: 5%;
+} */
+
+.header {
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 0 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-family: Akaya Telivigala;
+    color: #86BA09;
+}
+
+.navbar-main-left {
+    width: 30%;
+    margin-top: 20px;
+}
+
+.navbar-main-left-text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.navbar-main-right {
+    display: flex;
+    justify-content: space-between;
+    width: 5%;
+
+}
+
+.btnLogIn{
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /* main */
@@ -120,9 +167,17 @@
     text-decoration: none;
 }
 
-.newProduct-container .product:hover{
+/* .newProduct-container .product:hover{
     opacity: 0.7;
     animation-duration: 10ms;
+    transform: scale(1.1);
+} */
+
+.newProduct-container img:hover{
+    opacity: 0.7;
+    animation-duration: 10ms;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
 }
 
 .bg-price {

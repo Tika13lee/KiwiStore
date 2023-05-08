@@ -33,7 +33,6 @@
 .logo {
     font-family: Akaya Telivigala;
     color: #86BA09;
-    /* width: 30%; */
 }
 
 .navbar-main-left {
@@ -54,15 +53,16 @@
 
 }
 
-.btnLogIn{
+.btnLogIn {
     border-radius: 5px;
     padding: 5px;
 }
 
 /* Wrapper */
-.banner-height{
+.banner-height {
     height: 650px;
 }
+
 .welcome {
     margin-top: 100px;
     width: 100%;
@@ -166,7 +166,7 @@
 
 /* Introduce */
 .backgound-introduce {
-    width: 92%;  
+    width: 92%;
     height: 370px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,7 +180,7 @@
     width: 30%;
     position: absolute;
     right: 65px;
-    top: 45px;
+    top: 25px;
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
 
@@ -411,24 +411,30 @@ table td:first-child {
 table tr {
     height: 40px;
 }
-.menu-btn{
+
+/* respon-navbar */
+
+.menu-btn {
     display: none;
 }
-.nav-overlay{
+
+.nav-overlay {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     display: none;
-    animation: fadeIn linear 0.2s ;
+    animation: fadeIn linear 0.2s;
 }
-.navbar_ipad-list{
+
+.navbar_ipad-list {
     margin-top: 24px;
 
 }
-.nav-ipad{
+
+.nav-ipad {
     position: fixed;
     top: 0;
     left: 0;
@@ -441,7 +447,8 @@ table tr {
     transition: transform linear 0.2s, opacity linear 0.2s;
     z-index: 100;
 }
-.nav_ipad-link{
+
+.nav_ipad-link {
     text-decoration: none;
     color: #333;
     display: block;
@@ -449,19 +456,23 @@ table tr {
     padding-left: 10px;
     line-height: 3;
 }
-.icon-close{
+
+.icon-close {
     font-size: 35px;
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
-.nav-input:checked ~ .nav-overlay{
+
+.nav-input:checked~.nav-overlay {
     display: block;
 }
-.nav-input{
+
+.nav-input {
     display: none;
 }
-.nav-input:checked ~ .nav-ipad{
+
+.nav-input:checked~.nav-ipad {
     transform: translateX(0%);
     opacity: 1;
 }
@@ -472,52 +483,67 @@ table tr {
     .navbar-main-right {
         width: 10%;
     }
-    .respon-navbar{
+
+    .respon-navbar {
         display: block;
         margin-left: 20px;
         margin-top: -70px;
     }
-    .menu-btn{
+
+    .menu-btn {
         font-size: 20px;
         display: block;
-    
+
     }
-    .logo{
+
+    .logo {
         margin-left: 30px;
     }
+
     .navbar-main-left {
         display: none;
     }
-    .banner-height{
+
+    .banner-height {
         height: 300px;
     }
-    .welcome{
+
+    .welcome {
         height: 300px;
     }
-    .time{
+
+    .time {
         flex-direction: column;
     }
-    .img-lefttime{
+
+    .img-lefttime {
         width: 90%;
         height: 300px;
     }
-    .right-time-position_item1, .right-time-position_item2, .right-time-position_item3{
+
+    .right-time-position_item1,
+    .right-time-position_item2,
+    .right-time-position_item3 {
         display: none;
     }
-    .first-text{
+
+    .first-text {
         font-size: 24px;
     }
-    .flex-intro{
+
+    .flex-intro {
         display: flex;
         flex-direction: column;
     }
-    .text-introduce{
+
+    .text-introduce {
         font-size: 16px;
         line-height: 1.2;
         padding-left: 10%;
         width: 85%;
         padding-top: 120px;
     }
+
     .logo-img {
         width: 40%;
         position: absolute;
@@ -525,44 +551,52 @@ table tr {
         top: 20px;
         border: 15px;
     }
+
     .powerofnature {
         font-size: 20px;
         margin-left: 10px;
         margin-left: 30%;
     }
-    
+
     .bestsellersproducts {
         font-size: 24px;
         margin-left: 30%;
         margin-top: 7px;
     }
-    .wesupport {  
+
+    .wesupport {
         width: 400px;
         text-align: center;
         font-size: 20px;
         margin-left: 15%;
         margin-top: 5px;
     }
+
     .below-bestsellers {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
     }
-    .tohoaqua{
+
+    .tohoaqua {
         display: none;
     }
-    .footer-container{
+
+    .footer-container {
         flex-direction: column;
     }
 
-    .logo-container, .register{
+    .logo-container,
+    .register {
         width: 100%;
     }
-    @keyframes fadeIn{
-        from{
+
+    @keyframes fadeIn {
+        from {
             opacity: 0;
         }
-        to{
+
+        to {
             opacity: 1;
         }
     }
@@ -573,42 +607,49 @@ table tr {
     .navbar-main-right {
         width: 10%;
     }
-    .respon-navbar{
+
+    .respon-navbar {
         display: block;
         margin-left: 20px;
         margin-top: -70px;
     }
-    .menu-btn{
+
+    .menu-btn {
         font-size: 20px;
-        display: block; 
+        display: block;
     }
-    .logo{
-        margin-left: 300px;
-    }
+
     .time {
         flex-direction: column;
     }
+
     .flex-intro {
         flex-direction: column;
     }
+
     .img-lefttime {
         width: 70%;
     }
+
     .open-time,
     .close-time {
         width: 70%;
     }
+
     .right-time-position_item1,
     .right-time-position_item3 {
         width: 70px;
         height: 70px;
     }
+
     .right-time-position_item3 {
         margin-top: 120px;
     }
+
     .navbar-main-left {
         display: none;
     }
+
     .text-introduce {
         width: 50%;
         margin-left: 15%;
@@ -624,6 +665,7 @@ table tr {
     .flex-intro {
         flex-wrap: nowrap;
     }
+
     .wesupport {
         margin-left: 10%;
     }
@@ -632,66 +674,79 @@ table tr {
     .bestsellersproducts {
         margin-left: 25%;
     }
-    .luu{
+
+    .luu {
         width: 70px;
         height: 100px;
         margin-top: 35px;
-    
+
     }
-    .text-luu{
+
+    .text-luu {
         width: 200px;
         font-size: 12px;
         margin-left: 10px;
         margin-top: 30px;
     }
-    .vietquat{
+
+    .vietquat {
         width: 70px;
         height: 90px;
         margin-left: 12px;
     }
-    .text-vietquat{
+
+    .text-vietquat {
         width: 240px;
         font-size: 11px;
-    
+
     }
-    .tohoaqua{
+
+    .tohoaqua {
         width: 400px;
         height: 300px;
         margin-top: 260px;
     }
-    .cam{
+
+    .cam {
         width: 80px;
         height: 80px;
-    
+
     }
-    .text-cam{
+
+    .text-cam {
         width: 250px;
         font-size: 12px;
 
     }
-    .dau{
+
+    .dau {
         width: 80px;
         height: 90px;
         margin-bottom: -200px;
     }
-    .text-dau{
+
+    .text-dau {
         width: 250px;
         font-size: 11px;
         margin-top: 160px;
     }
+
     .footer-container {
         flex-direction: column;
     }
+
     .logo-container,
     .register {
         width: 100%;
     }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    @keyframes fadeIn{
-        from{
-            opacity: 0;
-        }
-        to{
-            opacity: 1;
-        }
+
+    to {
+        opacity: 1;
     }
+}

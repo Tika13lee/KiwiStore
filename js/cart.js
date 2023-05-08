@@ -89,6 +89,7 @@ var products = [
 
 for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
+        console.log(carts[i]);
         cartNumbers(products[i]);
         totalCost(products[i]);
         alert('Thêm thành công');
