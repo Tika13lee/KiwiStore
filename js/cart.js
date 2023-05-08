@@ -91,6 +91,7 @@ for (let i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
         cartNumbers(products[i]);
         totalCost(products[i]);
+        alert('Thêm thành công');
     })
 }
 
@@ -169,20 +170,8 @@ function displayCart(){
         let thanhTien = document.querySelector('.thanhTien');
 
         if(cartItems && productContainer){
-            // productContainer.innerHTML = '';
             var stt = 1;
             Object.values(cartItems).map(item => {
-                // productContainer.innerHTML += `
-                // <div class="products"> 
-                //     <p>${item.name}</p>
-                //     <p>${item.origin}</p>
-                //     <p>${item.price}</p>
-                //     <p>${item.inCart}</p>
-                //     <p>${item.inCart*item.price}</p>
-                // </div>
-
-                // productContainer.innerHTML += "<tr><td>" + item.name + "</td><td>" + item.origin + "</td><td>" + item.price + "</td><td>" + item.inCart +"</td><td>" + item.price*item.inCart +"</td></tr>";
-
                 productContainer.innerHTML += `
                     <div class="table">
                         <tr>
@@ -201,7 +190,7 @@ function displayCart(){
                 stt++;
             });
 
-            thanhTien.innerHTML += `<p class="sum">${cartCost}</p>`;  
+            thanhTien.innerHTML += `<p class="sum">${cartCost}</p>`;
         }
     }
 }
