@@ -131,6 +131,10 @@
     color: red;
 }
 
+.modal-content {
+    margin-top: 130px;
+}
+
 /* footer */
 .footer {
     /* margin: 50px 0; */

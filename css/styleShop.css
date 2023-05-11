@@ -22,6 +22,10 @@
     position: fixed;
     z-index: 9999;
     background-color: #F7F6F1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .navbar {
@@ -64,7 +68,7 @@
 /* main */
 
 .main{
-    margin: 0px auto 70px ;
+    margin: 100px auto 70px ;
 }
 
 /* main-img */
@@ -211,6 +215,10 @@
     align-items: center;
     width: 80%;
     margin: auto;
+}
+
+.modal-content {
+    margin-top: 130px;
 }
 
 /* footer */
